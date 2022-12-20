@@ -1,0 +1,12 @@
+.suspended_form {
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(147, 165, 192);
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 0.7rem;
+    align-items: center;
+}
+

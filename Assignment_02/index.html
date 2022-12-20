@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style1.css">
+    <title>Cryptography Tool</title>
+</head>
+<body>
+
+    <div class="suspended_form">
+
+        <div class="wrapper">
+            <h1>Cryptography Tool</h1>
+        </div>
+
+        <form id="myForm">
+            <div class="wrapper">
+                <textarea name="text" id="text" cols="35" rows="5" placeholder="Enter the text to be encrypted here"></textarea>
+            </div>
+            <br>
+            <div class="wrapper">
+                <label for="key">Encryption/Decryption key</label>
+                <input type="text" name="key" id="key">
+                <select name="crypto" id="crypto">
+                    <option value="Encrypt">Encrypt</option>
+                    <option value="Decrypt">Decrypt</option>
+                </select>
+            </div>
+            <br>
+
+            <div class="wrapper">
+                <label >Choose Algorithm</label>
+                <select name="algorithm" id="algorithm">
+                    <option value="AES">AES</option>
+                    <option value="DES">DES</option>
+                    <option value="3_DES">Triple DES</option>
+                    <option value="OTP">OTP</option>
+                </select>
+            </div>
+
+            <button class="submit_button" type="submit" id="submit">Encrypt</button>
+            
+        </form>
+
+        <div class="wrapper">
+            <div class="result">
+                <textarea id="resPara" cols="25" rows="3" placeholder="Processed text"></textarea>
+            </div>
+            <button class="copy_button" id="copy" disabled>Copy</button>
+            <p id="warning"></p>
+        </div>
+
+    </div>
+
+    <script src="./onetimepad.js"></script>
+    <script src="./crypto-js.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
